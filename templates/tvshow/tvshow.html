@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TVShow</title>
+</head>
+<body>
+<h1>Список фильмов</h1>
+<center>
+    {% for i in show_key %}
+        <h2>{{i.title}}</h2>
+        <img src="{{i.image.url}}" alt=""><br>
+        <a href="/show_detaill/{{i.id}}">Подробнее</a>
+        <hr>
+        <hr>
+    {% endfor %}
+</center>
+</body>
+</html>
