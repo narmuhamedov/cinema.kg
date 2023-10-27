@@ -8,7 +8,7 @@ class TvShow(models.Model):
     )
     title = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='film/')
+    image = models.FileField(upload_to='film/', null=True)
     act = models.CharField(max_length=100, choices=CHOICE_ACT)
     cost = models.PositiveIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)

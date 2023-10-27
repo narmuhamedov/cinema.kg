@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% include 'header.html' %}
 {% for i in post_key %}
 {{i.title}}<br>
 {{i.description}}<br>
@@ -14,5 +8,4 @@
 <hr>
 
 {% endfor %}
-</body>
-</html>
+{% include 'footer.html' %}

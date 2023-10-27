@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Детальная инфа об фильме {{show_id_key.title}}</h1>
-<img src="{{show_id_key.image.url}}" alt="">
-<p>{{show_id_key.description}}</p>
-<p>{{show_id_key.act}}</p>
-<p>{{show_id_key.cost}}</p>
-<p>{{show_id_key.created_at}}</p>
-</body>
-</html>
+{% load static %}
+{% include 'header.html' %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<div class="horizontal">
+<div class="card" style="width: 50%;">
+  <img src="{{show_id_key.image.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{show_id_key.title}}</h5>
+    <p class="card-text">{{show_id_key.description}}</div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{show_id_key.act}}</li>
+    <li class="list-group-item">{{show_id_key.cost}}</li>
+    <li class="list-group-item">{{show_id_key.created_at}}</li>
+  </ul>
+</div>
+</div>
+{% include 'footer.html' %}
