@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-    {% for i in show_key %}
+    {% for i in object_list %}
         <h2>{{i.title}}</h2>
         <a href="/delete_list/{{i.id}}/delete/">Удалить</a>
         <hr>

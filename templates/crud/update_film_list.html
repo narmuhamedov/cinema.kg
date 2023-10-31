@@ -2,7 +2,7 @@
 {% include 'header.html' %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
- {% for i in show_key %}
+ {% for i in object_list %}
         <h2>{{i.title}}</h2>
         <a href="/update_list/{{i.id}}/update/">Изменить</a>
         <hr>

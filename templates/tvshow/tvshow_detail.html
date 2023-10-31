@@ -3,14 +3,14 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <div class="horizontal">
 <div class="card" style="width: 50%;">
-  <img src="{{show_id_key.image.url}}" class="card-img-top" alt="...">
+  <img src="{{object.image.url}}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">{{show_id_key.title}}</h5>
-    <p class="card-text">{{show_id_key.description}}</div>
+    <h5 class="card-title">{{object.title}}</h5>
+    <p class="card-text">{{object.description}}</div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">{{show_id_key.act}}</li>
-    <li class="list-group-item">{{show_id_key.cost}}</li>
-    <li class="list-group-item">{{show_id_key.created_at}}</li>
+    <li class="list-group-item">{{object.act}}</li>
+    <li class="list-group-item">{{object.cost}}</li>
+    <li class="list-group-item">{{object.created_at}}</li>
   </ul>
 </div>
 </div>
