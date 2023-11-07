@@ -28,6 +28,11 @@
             <li><a class="dropdown-item" href="/create_film/">Добавить фильм</a></li>
             <li><a class="dropdown-item" href="/delete_list/">Удалить фильм</a></li>
             <li><a class="dropdown-item" href="/update_list/">Изменить</a></li>
+            <li>
+              <form method="post" action="{% url 'users:login' %}">
+                {% csrf_token %}
+                <button type="submit">Выйти</button>
+              </form>
           </ul>
         </li>
       </ul>
